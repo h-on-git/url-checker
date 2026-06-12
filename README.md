@@ -19,5 +19,7 @@
     -Any other valid URL returns as not existing.
 
 ##How to Run
-    -Open index.html in the browser.    
+    -Open index.html in the browser.
+
+    -Bootstrap 5 is loaded through CDN, therefore internet is required for the styling to load.    
 
