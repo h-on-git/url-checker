@@ -1,25 +1,26 @@
-#URL Checker
+# URL Checker
 
-##Features
-    -Checks whether the user entered URL is valid or not.
-    -Uses a mocked sever to contain URL data.
-    -Debounces and throttles to avoid too many requests.
-    -Returns the type (File or Folder) if the URL is valid and -exists.
+## Features
+- Checks whether the user entered URL is valid or not.
+- Uses a mocked sever to contain URL data.
+- Debounces and throttles to avoid too many requests.
+- Returns the type (File or Folder) if the URL is valid and exists.
 
 ##Mocked URLs
-    -The mocked server contains URLs:
-    -https://example.com/file.txt
-    -https://example.com/docs/
+The mocked server contains URLs:
 
-##Expected results:
+- https://example.com/file.txt
+- https://example.com/docs/
 
-    -https://example.com/file.txt -> exists, file
-    -https://example.com/docs/ -> exists, folder
+## Expected results:
 
-    -Any other valid URL returns as not existing.
+- https://example.com/file.txt -> exists, file
+- https://example.com/docs/ -> exists, folder
 
-##How to Run
-    -Open index.html in the browser.
+- Any other valid URL returns as not existing.
 
-    -Bootstrap 5 is loaded through CDN, therefore internet is required for the styling to load.    
+## How to Run
+- Open index.html in the browser.
+
+- Bootstrap 5 is loaded through CDN, therefore internet is required for the styling to load.    
 
