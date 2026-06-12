@@ -6,7 +6,7 @@
 - Debounces and throttles to avoid too many requests.
 - Returns the type (File or Folder) if the URL is valid and exists.
 
-##Mocked URLs
+## Mocked URLs
 The mocked server contains URLs:
 
 - https://example.com/file.txt
