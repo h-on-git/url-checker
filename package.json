@@ -1,0 +1,24 @@
+{
+  "name": "url-checker",
+  "version": "1.0.0",
+  "description": "- Checks whether the user entered URL is valid or not.\r - Uses a mocked sever to contain URL data.\r - Debounces and throttles to avoid too many requests.\r - Returns the type (File or Folder) if the URL is valid and exists.",
+  "main": "app.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-on-git/url-checker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/h-on-git/url-checker/issues"
+  },
+  "homepage": "https://github.com/h-on-git/url-checker#readme",
+  "devDependencies": {
+    "vitest": "^4.1.9"
+  }
+}

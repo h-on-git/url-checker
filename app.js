@@ -1,3 +1,4 @@
+import { checkValidUrl, mockServerCheck } from "./src/urlChecker.js";
 const userInput = document.getElementById("urlInput");
 const statusText = document.getElementById("status");
 //console.log(userInput);
@@ -8,49 +9,49 @@ let throttleTime;
 const THROTTLE_DELAY = 1000;
 
 // checks if the input URL is valid
-function checkValidUrl(userUrl){
-        try{
-            const url = new URL(userUrl);
-            const checkHttpOrHttps = url.protocol === "http:" || url.protocol === "https:";
-            return checkHttpOrHttps;
-        }
-        catch {
-            return false;
-        }
-}
+// function checkValidUrl(userUrl){
+//         try{
+//             const url = new URL(userUrl);
+//             const checkHttpOrHttps = url.protocol === "http:" || url.protocol === "https:";
+//             return checkHttpOrHttps;
+//         }
+//         catch {
+//             return false;
+//         }
+// }
 
 //mocks server containing URL data
-const mockServerData = {
-    "https://example.com/file.txt":{
-        type: "file"
-    },
-    "https://example.com/docs/":{
-        type: "folder"
-    }
-};
+// const mockServerData = {
+//     "https://example.com/file.txt":{
+//         type: "file"
+//     },
+//     "https://example.com/docs/":{
+//         type: "folder"
+//     }
+// };
 
 //asynchronous server call
-function mockServerCheck(userUrl){
-    return new Promise((resolve) => {
-        setTimeout(()=>{
-            const result = mockServerData[userUrl];
+// function mockServerCheck(userUrl){
+//     return new Promise((resolve) => {
+//         setTimeout(()=>{
+//             const result = mockServerData[userUrl];
 
-            if(result){
-                resolve({
-                    exists: true,
-                    type: result.type
-                });
-            }
+//             if(result){
+//                 resolve({
+//                     exists: true,
+//                     type: result.type
+//                 });
+//             }
 
-            else{
-                resolve({
-                    exists: false,
-                    type: null
-                });
-            }
-        }, 1000);
-    });
-}
+//             else{
+//                 resolve({
+//                     exists: false,
+//                     type: null
+//                 });
+//             }
+//         }, 1000);
+//     });
+// }
 
 //throttle to avoid multiple server calls
 function throttleCheck(userUrl){

@@ -19,8 +19,19 @@ The mocked server contains URLs:
 
 - Any other valid URL returns as not existing.
 
+## Automated Tests
+
+This project uses Vitest for automated unit testing.
+
+The current tests cover:
+- URL validation for valid HTTP/HTTPS URLs
+- Rejection of invalid URLs
+- Mocked asynchronous server responses for existing file/folder URLs
+- Mocked response for unknown URLs
+
+
 ## How to Run
-- Open index.html in the browser.
+- Open index.html through a local server.
 
 - Bootstrap 5 is loaded through CDN, therefore internet is required for the styling to load.    
 
